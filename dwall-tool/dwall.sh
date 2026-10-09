@@ -1,42 +1,9 @@
 #!/bin/sh
-#var_check() {
-#	if [[ -f $HOME/cdwall ]]; then
-#       		source $HOME/cdwall
-#	else
-#		echo "No configuration file in $HOME/..."
-#		exit 1
-#	fi
-#}
 #-------* Config *-------#
 
 WALL_DIR="$HOME/Wallpapers"
 
 #-------* Script *-------#
-check_config() {
-	case $WALL_COM in
-		"awww img"*|"swww img"*)
-			echo Check
-			;;
-		"xwallpaper"*)
-			echo Check
-			;;
-		*)
-			echo -e "\033[31mERROR:\033[0m Not avaliable wallpaper set tool"
-			exit 1
-			;;
-	esac
-}
-
-setwal() {
-	selected=$(ls $WALL_DIR | dmenu)
-	
-	if [ -z $selected ]; then
-		exit 0
-	fi
-	WALL_COM="awww img $WALL_DIR/$selected --transition-type grow --transition-fps 60"
-	check_config
-	$WALL_COM
-}
 
 help() {
 	echo -e "\033[35mdwall\033[0m - small tool for setting wallpaper"
