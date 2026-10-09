@@ -12,7 +12,6 @@ setwal() {
 	fi
 	WALL_COM="awww img $WALL_DIR/$selected --transition-type grow --transition-fps 60"
 	check_config
-	$WALL_COM
 }
 
 help() {
