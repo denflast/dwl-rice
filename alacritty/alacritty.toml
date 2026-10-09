@@ -1,0 +1,13 @@
+[general]
+import = ["~/.cache/wal/colors-alacritty.toml"]
+live_config_reload = true
+
+[font]
+normal = { family = "Gallant Raster Term", style = "Regular" }
+size = 15
+
+[window]
+padding = { x = 20, y = 20 }
+
+[cursor]
+style = { shape = "Underline", blinking = "Always" }

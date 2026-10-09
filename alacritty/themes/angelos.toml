@@ -1,0 +1,44 @@
+# angelOS gruvbox / dark
+[colors.primary]
+background = '#282828'
+foreground = '#ebdbb2'
+
+[colors.cursor]
+text = '#282828'
+cursor = '#fabd2f'
+
+[colors.vi_mode_cursor]
+text = '#282828'
+cursor = '#83a598'
+
+[colors.selection]
+text = '#282828'
+background = '#fabd2f'
+
+[colors.search.matches]
+foreground = '#282828'
+background = '#83a598'
+
+[colors.search.focused_match]
+foreground = '#282828'
+background = '#fabd2f'
+
+[colors.normal]
+black   = '#282828'
+red     = '#e36b78'
+green   = '#8eaf73'
+yellow  = '#d8b56b'
+blue    = '#83a598'
+magenta = '#fabd2f'
+cyan    = '#72b7b0'
+white   = '#ebdbb2'
+
+[colors.bright]
+black   = '#a89984'
+red     = '#f58b98'
+green   = '#aacf93'
+yellow  = '#efd18b'
+blue    = '#83a598'
+magenta = '#fabd2f'
+cyan    = '#92d7d0'
+white   = '#ebdbb2'
