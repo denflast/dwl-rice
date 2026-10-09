@@ -4,6 +4,16 @@
 WALL_DIR="$HOME/Wallpapers"
 
 #-------* Script *-------#
+setwal() {
+	selected=$(ls $WALL_DIR | dmenu)
+	
+	if [ -z $selected ]; then
+		exit 0
+	fi
+	WALL_COM="awww img $WALL_DIR/$selected --transition-type grow --transition-fps 60"
+	check_config
+	$WALL_COM
+}
 
 help() {
 	echo -e "\033[35mdwall\033[0m - small tool for setting wallpaper"
